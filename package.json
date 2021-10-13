@@ -1,0 +1,27 @@
+{
+  "name": "Time4_Tech",
+  "version": "1.0.0",
+  "description": "Using handlebars, this project aims to be a simple, yet functional blog for people interested in the tech world.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shiel1dm/Time4_Tech.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shiel1dm/Time4_Tech/issues"
+  },
+  "homepage": "https://github.com/shiel1dm/Time4_Tech#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.2",
+    "dotenv": "^10.0.0",
+    "express-handlebars": "^5.3.4"
+  }
+}
