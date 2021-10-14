@@ -11,9 +11,10 @@ router.get('/', withAuth, async (req, res) => {
 
     const users = userData.map((project) => project.get({ plain: true }));
 
-    res.render('homepage', {
+    res.render('home', {
       users,
       logged_in: req.session.logged_in,
+      layout: 'index'
     });
   } catch (err) {
     res.status(500).json(err, 'auth error')
@@ -25,6 +26,14 @@ router.get('/login', async (req, res) => {
     res.render('login', {layout : 'index'})
   }catch (err) {
     res.status(500).json(err, '/login route error')
+  }
+})
+
+router.get('/signup', async (req, res) => {
+  try{
+    res.render('signup', {layout: 'index'})
+  }catch (err) {
+    res.status(500).json(err, '/signup route error')
   }
 })
 
